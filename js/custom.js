@@ -146,7 +146,7 @@ function startLenderLocation(la, ln) {
   loading.classList.remove('on');
 }
 
-function getInfoOnMarder(data) {
+function getInfoOnMarker(data) {
   const detailsWrapper = document.querySelector('.details');
   detailsWrapper.style.display = 'none'; //초기 활성화 시 모든 details 요소 숨김
   detailsWrapper.innerHTML = ''; //초기 활성화 시 모든 details 자식 요소 삭제
