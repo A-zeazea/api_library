@@ -4,7 +4,7 @@ const headerHeight = document.querySelector('header').scrollHeight;
 const bottomHeight = document.querySelector('.bottom-bar').scrollHeight;
 
 // section .map-wrapper 요소 저장
-const section = document.querySelector('section .map-wrapper');
+const section = document.querySelector('section .container');
 const details = document.querySelector('.details'); // details 요소 저장.
 
 section.style.height = `calc(100vh - ${headerHeight}px)`; // 100vh 에서 header
