@@ -62,7 +62,7 @@ input.addEventListener('keypress', function (e) {
     // enter의 keycode는 13이다. / 시작을 Input으로 해뒀기 때문에, 커서가 입력창에 가있어야 발동됨.
     btn.click();
   }
-});
+}); // input에서 enter key 입력 시 실행할 함수
 
 //====================
 // NAVER MAP API CODES
@@ -76,6 +76,7 @@ navigator.geolocation.getCurrentPosition((position) => {
   // 위의 현재 위치를 파라미터로 받아와, 중앙을 현재 위치로 픽스
   startLenderLocation(lat, lng); // 새로운 함수 호출
 });
+
 function startLenderLocation(la, ln) {
   var map = new naver.maps.Map('map', {
     center: new naver.maps.LatLng(la, ln),
